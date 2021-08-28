@@ -26,7 +26,7 @@
 
 웹 접근성은 장애인 및 고령자 등을 포함한 모든 사람이 모든 기기에서 웹 플랫폼 상의 정보에 제한 없이 동등하게 이용할 수 있도록 보장하는 것입니다.
 
-<em>W3C-WAI(Web Accessibility Initiative)의 WCAG(Web Content Accessibility Guidelines) 지침</em>
+<strong>W3C-WAI(Web Accessibility Initiative)의 WCAG(Web Content Accessibility Guidelines) 지침</strong>
 
 1. Perceivable - 인지성
    정보 및 사용자 인터페이스 구성 요소는 사용자가 인식할 수 있는 방식으로 표시할 수 있어야 합니다.
@@ -44,7 +44,7 @@
 
 웹 호환성은 표준 기술을 사용하고, 다른 기종 플랫폼에 따라 어느 한쪽에 최적화되어 치우치지 않도록 공통 요소를 사용해야 합니다.
 
-<em>크로스 브라우징(Cross Browsing)</em>
+<strong>크로스 브라우징(Cross Browsing)</strong>
 크롬, 파이어 폭스, 익스플로어 등 브라우저 마다 렌더링 엔진이 다르기 때문에 동일한 화면이 보여지도록 호환성을 제공합니다.
 
 => 웹 제작시 표준, 접근성, 호환성을 생각하여 올바른 뼈대를 갖추고 모든 사용자가 사용할 수 이있는 접근성을 고려하며, 또한 어떠한 브라우저를 사용해도 최대한 동일한 결과를 보여 줄 수 있도록 노력 해야 합니다.
@@ -52,4 +52,5 @@
 ## 참고 사이트 및 이미지 출처
 
 [https://www.w3.org/TR/WCAG21/#toc]
+
 [https://nuli.navercorp.com/community/article/1133108]
