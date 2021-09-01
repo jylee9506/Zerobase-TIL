@@ -35,3 +35,32 @@
   </tfoot>
 </table>
 
+
+
+  <h1>음식 종류</h1>
+  <select id="food">
+    <optgroup label="한식">
+      <option>불고기</option>
+      <option>비빔밥</option>
+      <option>삼계탕</option>
+    </optgroup>
+    <optgroup label="중식">
+      <option>짜장면</option>
+      <option>짬뽕</option>
+      <option>볶음밥</option>
+    </optgroup>
+  </select>
+
+  <form action="survey.php" method="post" name="survey">
+    <label for="food">음식을 골라주세요</label>
+    <input type="text" id="food" size="50" list="foodlist">
+    <datalist id="foodlist">
+      <option value="불고기" label="불고기"></option>
+      <option value="비빔밥" label="비빔밥"></option>
+      <option value="삼계탕" label="삼계탕"></option>
+      <option value="짬뽕" label="짬뽕"></option>
+      <option value="짜장면" label="짜장면"></option>
+    </datalist>
+  </form>
+    
+  <textarea cols="30" rows="5" placeholder="좋아하는 음식과 이유를 쓰시오"></textarea>
