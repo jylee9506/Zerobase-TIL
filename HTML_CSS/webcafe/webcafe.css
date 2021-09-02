@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.a11y-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  min-width: 480px;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  background-color: bisque;
+  margin: 0;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+}
+
+.menu-service {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.menu-service li {
+  padding-top: 8px;
+}
+
+.menu-service a {
+  padding: 8px;
+}
+.menu-service li:nth-child(n + 2)::before {
+  content: ":";
+}
+
+.navigation {
+  /* margin-top: 200px; */
+}
+
+.menu {
+  margin: 0;
+  margin-top: 40px;
+  padding: 0 0 0 250px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.menu-button {
+  cursor: pointer;
+  border: 0;
+  height: 50px;
+}
+.menu-sub {
+  list-style: none;
+  padding: 0;
+  display: none;
+}
