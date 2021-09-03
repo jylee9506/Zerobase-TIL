@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+/* 히든 컴포넌트 */
 .a11y-hidden {
   position: absolute;
   width: 1px;
@@ -13,67 +14,136 @@
   clip-path: polygon(0 0, 0 0, 0 0);
   overflow: hidden;
 }
+html {
+  height: 100%;
+}
 body {
   margin: 0;
-  min-width: 480px;
+  background-color: gray;
+  height: 100%;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .header {
-  background-color: bisque;
-  margin: 0;
+  background-color: white;
   position: relative;
+  border-radius: 0 0 10px 10px;
 }
-
 .logo {
+  margin: 0;
   position: absolute;
-  top: 40px;
-  left: 80px;
+  top: 52px;
+  left: 65px;
 }
-
 .menu-service {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 10px 0;
+  padding: 0 35px;
   display: flex;
   justify-content: flex-end;
 }
-.menu-service li {
-  padding-top: 8px;
-}
-
 .menu-service a {
   padding: 8px;
+}
+.menu-service li {
+  margin-top: 8px;
 }
 .menu-service li:nth-child(n + 2)::before {
   content: ":";
 }
-
 .navigation {
-  /* margin-top: 200px; */
+  padding: 0 35px;
+  padding-bottom: 35px;
+}
+.menu {
+  padding-left: 250px;
+  display: flex;
+  height: 45px;
+  background-color: orange;
+  border-top: 2px solid black;
 }
 
-.menu {
-  margin: 0;
-  margin-top: 40px;
-  padding: 0 0 0 250px;
-  display: flex;
-  flex-flow: row nowrap;
-}
 .menu-list {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 .menu-button {
   cursor: pointer;
   border: 0;
-  height: 50px;
+  border-left: 1px solid #fff;
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+  background-color: orange;
+  font-weight: 500;
+  font-size: 19px;
+  padding: 0 8px;
 }
+.is-active .menu-button {
+  color: yellow;
+}
+.is-active .menu-button::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: black;
+}
+
 .menu-sub {
   list-style: none;
   padding: 0;
   display: none;
+}
+.menu-sub li {
+  display: inline-block;
+  margin: 8px;
+}
+.menu-sub li :hover {
+  color: red;
+}
+.is-active .menu-sub {
+  display: flex;
+  position: absolute;
+}
+.visual {
+  background-color: lightcoral;
+}
+.main {
+  background-color: lightseagreen;
+  height: 100vh;
+  display: flex;
+}
+.group {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.group1 {
+  width: 250px;
+  background-color: moccasin;
+}
+.group2 {
+  width: 380px;
+  background-color: olivedrab;
+}
+.group3 {
+  width: 190px;
+  background-color: palegreen;
+}
+.slogan {
+  background-color: maroon;
+}
+.footer {
+  background-color: mediumpurple;
 }
