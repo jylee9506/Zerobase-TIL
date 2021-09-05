@@ -42,6 +42,7 @@ a {
   position: relative;
   border-radius: 0 0 10px 10px;
 }
+/* 메뉴 바 */
 .logo {
   margin: 0;
   position: absolute;
@@ -91,6 +92,7 @@ a {
   font-size: 19px;
   padding: 0 8px;
 }
+/* 메뉴 동작 효과 */
 .is-active .menu-button {
   color: yellow;
 }
@@ -130,8 +132,74 @@ a {
   flex-shrink: 1;
 }
 .group1 {
-  width: 250px;
   background-color: moccasin;
+}
+
+/* 로그인 */
+.login {
+  background-color: orange;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 0 gray;
+  width: 250px;
+  padding: 15px;
+}
+.login-heading {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: yellow;
+}
+.login-form {
+  width: 230px;
+  border: 0;
+  padding: 5px;
+  position: relative;
+  font-size: 14px;
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+}
+.login fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.user-email label {
+  margin-right: 14px;
+}
+.login input {
+  width: 100px;
+  margin-right: 5px;
+}
+.user-password {
+  margin-top: 5px;
+}
+.button-login {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  height: 45px;
+  font-size: 12px;
+}
+.login-form::after {
+  content: "";
+  display: block;
+  height: 0.5px;
+  background-color: black;
+  margin-top: 10px;
+}
+.sign {
+  width: 230px;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  display: flex;
+  background-color: white;
+  justify-content: space-evenly;
+  font-size: 12px;
+  border-radius: 0 0 5px 5px;
 }
 .group2 {
   width: 380px;
