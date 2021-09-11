@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+
+.navigation {
+  height: 64px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 46px;
+}
+.menu {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.menu li {
+  margin: 0 10px;
+  list-style-type: none;
+  line-height: 46px;
+  cursor: pointer;
+}
