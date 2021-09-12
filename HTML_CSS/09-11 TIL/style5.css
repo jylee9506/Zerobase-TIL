@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* 전체적인 레이아웃 */
+body {
+  margin: 0;
+}
+.header {
+  padding: 18px;
+  border-bottom: 3px solid black;
+  margin-bottom: 0.9375rem;
+}
+.header h1 {
+  margin: 0 0.875rem 0 0;
+  display: inline-block;
+}
+/* 댓글 수 */
+.comment-number {
+  color: #06a27d;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* 댓글창 */
+.comment {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.comment li {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 0.9375rem;
+}
+.comment figure {
+  margin: 0;
+}
+
+.date {
+  color: #939393;
+}
+.brief {
+  word-break: keep-all;
+  line-height: 1.5;
+}

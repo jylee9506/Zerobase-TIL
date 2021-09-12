@@ -13,3 +13,6 @@ N = [85 ,3, 29, 38, 12, 57, 74, 40, 61]
     
     // console.log(max);
     console.log(count+1);
+
+
+
