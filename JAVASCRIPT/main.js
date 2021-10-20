@@ -7,15 +7,21 @@ console.log(input);
 
 // <-------------------------------------------------------------------------------------------------------------------->
 
-let 안녕 = "하세요";
-let h1 = "hello";
-let HI = "HELLO"
+// let 안녕 = "하세요";
+// let h1 = "hello";
+// let HI = "HELLO"
 
-console.log(안녕)
-console.log(h1)
-console.log(HI)
+// console.log(안녕)
+// console.log(h1)
+// console.log(HI)
 
 // <-------------------------------------------------------------------------------------------------------------------->
 
-let str = "hello world";
-console.log(typeof str);
+// let str = "hello world";
+// console.log(typeof str);
+
+
+let age = 27;
+
+my_age = age > 20 ? "adult" : "child";
+console.log(my_age); 
